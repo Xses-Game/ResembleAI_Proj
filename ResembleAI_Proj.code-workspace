@@ -1,0 +1,883 @@
+{
+	"folders": [
+		{
+			"name": "ResembleAI_Proj",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "D:\\Unreal_Editor\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "ResembleAI_Proj Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_Proj Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_Proj Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"Development",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"Development",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_Proj Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"Development",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"Test",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"Test",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_Proj Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"Test",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_Proj Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"Win64",
+					"Shipping",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"Debug",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"Debug",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_Proj IOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"Debug",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"DebugGame",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"DebugGame",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_Proj IOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"DebugGame",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"Development",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"Development",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_Proj IOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"Development",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"Test",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"Test",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_Proj IOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"Test",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"Shipping",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"Shipping",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_Proj IOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_Proj IOS Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_Proj",
+					"IOS",
+					"Shipping",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_ProjEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_ProjEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_ProjEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_ProjEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_ProjEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_ProjEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_ProjEditor",
+					"Win64",
+					"Debug",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_ProjEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_ProjEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_ProjEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_ProjEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_ProjEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_ProjEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_ProjEditor",
+					"Win64",
+					"DebugGame",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_ProjEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_ProjEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_ProjEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ResembleAI_ProjEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ResembleAI_ProjEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"label": "ResembleAI_ProjEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ResembleAI_ProjEditor",
+					"Win64",
+					"Development",
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch ResembleAI_Proj (Debug)",
+				"request": "launch",
+				"program": "C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "ResembleAI_Proj Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "D:\\Unreal_Editor\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal_Editor\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch ResembleAI_Proj (DebugGame)",
+				"request": "launch",
+				"program": "C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "ResembleAI_Proj Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "D:\\Unreal_Editor\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal_Editor\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch ResembleAI_Proj (Development)",
+				"request": "launch",
+				"program": "C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "ResembleAI_Proj Win64 Development Build",
+				"args": [
+				],
+				"cwd": "D:\\Unreal_Editor\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal_Editor\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch ResembleAI_Proj (Test)",
+				"request": "launch",
+				"program": "C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "ResembleAI_Proj Win64 Test Build",
+				"args": [
+				],
+				"cwd": "D:\\Unreal_Editor\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal_Editor\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch ResembleAI_Proj (Shipping)",
+				"request": "launch",
+				"program": "C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "ResembleAI_Proj Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "D:\\Unreal_Editor\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal_Editor\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch ResembleAI_ProjEditor (Debug)",
+				"request": "launch",
+				"program": "D:\\Unreal_Editor\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "ResembleAI_ProjEditor Win64 Debug Build",
+				"args": [
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject"
+				],
+				"cwd": "D:\\Unreal_Editor\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal_Editor\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch ResembleAI_ProjEditor (DebugGame)",
+				"request": "launch",
+				"program": "D:\\Unreal_Editor\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "ResembleAI_ProjEditor Win64 DebugGame Build",
+				"args": [
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject"
+				],
+				"cwd": "D:\\Unreal_Editor\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal_Editor\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch ResembleAI_ProjEditor (Development)",
+				"request": "launch",
+				"program": "D:\\Unreal_Editor\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "ResembleAI_ProjEditor Win64 Development Build",
+				"args": [
+					"C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject"
+				],
+				"cwd": "D:\\Unreal_Editor\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal_Editor\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal_Editor\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "D:\\Unreal_Editor\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=C:\\Users\\Protonine\\Documents\\Unreal Projects\\ResembleAI_Proj\\ResembleAI_Proj.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "D:\\Unreal_Editor\\UE_5.3"
+			}
+		]
+	}
+}
